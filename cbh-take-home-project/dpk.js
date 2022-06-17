@@ -10,10 +10,12 @@ exports.deterministicPartitionKey = (input) => {
       const data = JSON.stringify(input);
       partitionResult = crypto.createHash("sha3-512").update(data).digest("hex");
   }
+
   // Checking type of partitionResult
   if (typeof partitionResult !== "string") {
     partitionResult = JSON.stringify(partitionResult);
   }
+  // Checking if partitionResult exist
   if (!partitionResult) partitionResult = TRIVIAL_PARTITION_KEY;
 
   if (partitionResult.length > MAX_PARTITION_KEY_LENGTH) 
