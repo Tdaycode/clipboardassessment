@@ -18,6 +18,9 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ## Your Breakdown Here
 
 1. **Generating custom IDs by Facilities**
+  # Acceptance Criteria
+  I- The program should run within the maximum time of 100 milliseconds
+  II - Id should contain index zero of first name and last name of agent
 
 2. **Saving custom IDs Per Agent**
 
