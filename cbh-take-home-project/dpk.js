@@ -21,8 +21,8 @@ exports.deterministicPartitionKey = (event) => {
   } else {
     partitionResult = TRIVIAL_PARTITION_KEY;
   }
-  if (partitionResult.length > MAX_PARTITION_KEY_LENGTH) {
-    partitionResult = crypto.createHash("sha3-512").update(partitionResult).digest("hex");
-  }
+  if (partitionResult.length > MAX_PARTITION_KEY_LENGTH) 
+        partitionResult = crypto.createHash("sha3-512").update(partitionResult).digest("hex");
+  
   return partitionResult;
 };
