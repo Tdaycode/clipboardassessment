@@ -26,6 +26,12 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
    # Time/Effort estimates
    - Within 30 to 60 minutes
    - Validation to make sure each IDs is unique per Agent
+
+    # Implementation Details
+    - Prompt facilities to input custom ID for agent starting with first index of first name and last name of agent.
+    - Validate if ID already exist for another agent.
+    - If it already exist, prompt user to enter another ID
+    - If it does not exist, save agent with the ID
 2. **Saving custom IDs Per Agent**
 
 3. **Adding IDs to generated reports**
