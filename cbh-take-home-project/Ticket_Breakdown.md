@@ -23,6 +23,9 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
   II - ID should contain index zero of first name and last name of agent.
   III - Each ID must be unique for each Agents
 
+   # Time/Effort estimates
+   - Within 30 to 60 minutes
+   - Validation to make sure each IDs is unique per Agent
 2. **Saving custom IDs Per Agent**
 
 3. **Adding IDs to generated reports**
