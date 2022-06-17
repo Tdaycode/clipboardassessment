@@ -30,34 +30,33 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
     # Implementation Details
     - Prompt facilities to input custom ID for agent starting with first index of first name and last name of agent.
     - Validate if ID already exist for another agent.
-    - If it already exist, prompt user to enter another ID
-    - If it does not exist, save agent with the ID
+    - If it already exist, prompt user to enter another ID.
+    - If it does not exist, save agent with the ID.
 2. **Saving custom IDs Per Agent**
     # Acceptance Criteria
   - The program should run within the maximum time of 100 milliseconds.
-  - ID should contain index zero of first name and last name of agent.
-  - Each ID must be unique for each Agents
 
    # Time/Effort estimates
-   - Within 30 to 60 minutes
-   - Validation to make sure each IDs is unique per Agent
+   - Within 30 to 60 minutes.
+   - Validation to make sure each IDs is unique per Agent.
 
     # Implementation Details
-    - Prompt facilities to input custom ID for agent starting with first index of first name and last name of agent.
-    - Validate if ID already exist for another agent.
-    - If it already exist, prompt user to enter another ID
-    - If it does not exist, save agent with the ID
+    - Create space in the database to save custom ID.
+    - Create a function that find Agent By ID and update the custom ID field.
+    - Query the other agents to be sure the custom id has not been assigned to other agent.
+    - If it has been assigned, throw an error ID already exist.
+    - Else update the custom Id field of agent with the ID.
 
 3. **Adding IDs to generated reports**
 
     # Acceptance Criteria
   - The program should run within the maximum time of 200 milliseconds.
-  - Report should include custom ID input by the user
-  - Report should be detailed
+  - Report should include custom ID input by the user.
+  - Report should be detailed.
 
    # Time/Effort estimates
-   - Within 30 to 60 minutes
-   - Validation to make sure reports contain the agent assigned custom ID
+   - Within 30 to 60 minutes.
+   - Validation to make sure reports contain the agent assigned custom ID.
 
     # Implementation Details
     - Check for all possible edge cases to improve user experience.
