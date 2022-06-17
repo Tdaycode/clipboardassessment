@@ -19,9 +19,9 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 1. **Generating custom IDs by Facilities**
   # Acceptance Criteria
-  I- The program should run within the maximum time of 100 milliseconds.
-  II - ID should contain index zero of first name and last name of agent.
-  III - Each ID must be unique for each Agents
+  - The program should run within the maximum time of 100 milliseconds.
+  - ID should contain index zero of first name and last name of agent.
+  - Each ID must be unique for each Agents
 
    # Time/Effort estimates
    - Within 30 to 60 minutes
