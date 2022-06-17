@@ -1,15 +1,16 @@
 const { deterministicPartitionKey } = require("./dpk");
 // Declaring test Data for deterministicPartitionKey function
-const testData = ["Tayo is a good"]
+const testData = "tayo"
 
 describe("deterministicPartitionKey", () => {
   it("Returns the literal '0' when given no input", () => {
     const trivialKey = deterministicPartitionKey();
     expect(trivialKey).toBe("0");
   });
-  test("Should return partition key when  given an event", async() => {
+  test("Should return partition key when  given an event", () => {
     // Testing the deterministicPartitionKey function return type string after the event is given
-    await expect(typeof deterministicPartitionKey(testData)).toBe("string")
+    const trivialKey = deterministicPartitionKey(testData);
+    expect(typeof trivialKey).toBe("string");
 
   })
 
