@@ -5,6 +5,8 @@ exports.deterministicPartitionKey = (input) => {
   const MAX_PARTITION_KEY_LENGTH = 256;
   let partitionResult;
 
+  if(input === undefined) return "Input cannot be empty";
+
   // Checking if partition key already exist
   if(input.partitionKey) partitionResult = input.partitionKey;
 

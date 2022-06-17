@@ -9,5 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
-I choose to reduce the number nested if/else statement for readability, I removed the line that check if partition key already because the input could be any datatype and not just object(hashMap)
+I choose to reduce the number nested if/else statement for readability. Furthermore, check for possible edge cases to make the program user friendly
 
