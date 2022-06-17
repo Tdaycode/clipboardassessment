@@ -11,12 +11,11 @@ exports.deterministicPartitionKey = (event) => {
     event = event.partitionKey? partitionKey = event.partitionKey: partitionKey = crypto.createHash("sha3-512").update(data).digest("hex");
   }
 
-   if (partitionKey) {
+   if (partitionKey)
       partitionKey= typeof partitionKey !== "string" 
       partitionKey = JSON.stringify(partitionKey);
-  } else {
     partitionKey = TRIVIAL_PARTITION_KEY;
-  }
+  
   if (partitionKey.length > MAX_PARTITION_KEY_LENGTH) {
     partitionKey = crypto.createHash("sha3-512").update(partitionKey).digest("hex");
   }
